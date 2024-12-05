@@ -31,7 +31,7 @@ public class DoublyLinkedList {
             newNode.prev = tail;
             tail = newNode;
         }
-        length++;
+        length+= 1;
     }
 
     public Node removeLast() {
