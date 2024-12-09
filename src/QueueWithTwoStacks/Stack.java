@@ -1,4 +1,4 @@
-package StackAsArrayList;
+package QueueWithTwoStacks;
 
 import java.util.ArrayList;
 
@@ -44,7 +44,7 @@ public class Stack<T> {
 
     public static String reverseString(String string) {
         // Create a new stack of characters.
-        Stack<Character> stack = new Stack<>();
+        StackAsArrayList.Stack<Character> stack = new StackAsArrayList.Stack<>();
         // Create an empty string for the reversed characters.
         String reversedString = "";
 
@@ -66,7 +66,7 @@ public class Stack<T> {
 
     public static boolean isBalancedParentheses(String parentheses) {
         // Create an empty stack of characters
-        Stack<Character> stack = new Stack<>();
+        StackAsArrayList.Stack<Character> stack = new StackAsArrayList.Stack<>();
 
         // Iterate through each character in the input string
         for (char p : parentheses.toCharArray()) {
@@ -91,9 +91,9 @@ public class Stack<T> {
         return stack.isEmpty();
     }
 
-    public void sortStack(Stack<Integer> s) {
+    public void sortStack(StackAsArrayList.Stack<Integer> s) {
         if (s.isEmpty()) return;
-        Stack<Integer> sortedStack = new Stack<>();
+        StackAsArrayList.Stack<Integer> sortedStack = new StackAsArrayList.Stack<>();
         int temp;
         while (!s.isEmpty()) {
             temp = s.pop();
@@ -109,4 +109,3 @@ public class Stack<T> {
 
     }
 }
-
